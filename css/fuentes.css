@@ -1,0 +1,8 @@
+@font-face{
+    font-family: COLONNA;
+    src: url(fuentes/COLONNA);
+}
+
+h1{
+    font-family: COLONNA;
+}

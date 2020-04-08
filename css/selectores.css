@@ -1,0 +1,90 @@
+/*{
+    margin: 0;
+    padding: 0;
+}*/
+
+body{
+    background: rgb(241, 232, 231);
+}
+
+p{
+    width: 220px;
+    height: 25px;
+    border: 1px solid black;
+    border: double;    
+}
+
+
+p {
+    border-bottom: 3px solid rgb(28, 126, 109);
+}
+
+#Maria,
+#Teresa,
+#Juan,
+#Saturdino {
+    color : Red
+}
+
+#Americas,
+#Alamos,
+#Chile,
+#Bosa,
+#Chapinero{
+    color: blue;
+    display: flex;
+}
+
+#Venecia,
+#Carrera30,
+#distri{
+    color: greenyellow;
+}
+
+#PlazaAmericas,
+#Olimpica{ 
+    color: grey;
+}
+
+h1+h2{
+    width: 250px;
+    height: 60px;
+    border: 1px solid black;
+    border: double; 
+}
+
+h2+h1{
+    width: 250px;
+    height: 60px;
+    border: double;
+    color: aqua;
+}
+
+#Hipermercados .Almacenes-Alkosto {
+    width: 250px;
+    height: 60px;
+    border: double;
+    background-color: pink;
+}
+
+div ~.Almacenes-Exito{
+    width: 400px;
+    height: 100px;
+    border: double;
+    background-color:;
+}
+
+ul > h3{
+    width: 400px;
+    height: 100px;
+    border: double;
+    background-color:rgb(68, 24, 24);
+    border-color: blanchedalmond;
+}
+
+
+/*@font-face {
+    font-family: "desdeGoogle";
+    src: url(../fonts/IMFellFrenchCanonSC-Regular.ttf)
+}*/
+

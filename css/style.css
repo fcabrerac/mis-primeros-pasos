@@ -1,0 +1,66 @@
+#principal{
+    width: 900px;
+    height: 1000px;
+    border: 1px solid #000;
+    margin: auto;
+    border: double;
+}
+
+header{
+    width: 900px;
+    height:80px;
+    border: 1px solid red;
+}
+
+#buscador{
+    width: 200px;
+    height: 80px;
+    border: 1px solid blue;
+    float: left;
+}
+
+.menu{
+    width: 500px;
+    height: 40px;
+    border: 1px solid gray ;
+    float: right;
+    margin-top: 20px;
+    background: salmon;
+}
+
+.menu ul{}
+
+.menu ul li{
+    list-style: none;
+    float: left;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    padding: 12px 12px;
+    border:  0px solid pink;
+    color: white;
+}
+
+
+#alerta{
+   margin-top:10px ;
+   width: 200px;
+   height: 300px;
+   border: 1px solid orange ;
+}
+
+#categorias{
+    width: 900px;
+    height: 310px; overflow: hidden;
+    border: 1px solid;
+    margin-top: 300px;
+}
+
+.uno{
+    width: 450px;
+    height: 310px;
+    border: 1px solid;
+    float: left;
+}
+

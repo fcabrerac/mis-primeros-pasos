@@ -1,0 +1,126 @@
+#principal{
+    width: 900px;
+    height: 60px;
+    border: 1px solid #000;
+    margin: auto;
+    border: double;
+    font-weight: initial;
+}
+
+#principal h1{
+    width: 900px;
+    height: 60px;
+    color: red
+    display: flex;
+    flex-direction: row ;
+}
+
+#principal h1_1{
+    width: 900px;
+    height: 60px;
+    color: purple;
+    font-style: italic;
+}
+
+.menu{
+    width: 900px;
+    height: 50px;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.menu ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse ;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    padding: 10px 12px;
+    border:  0px solid pink;
+    color: orangered;
+}
+
+header{
+    margin-top: 250px;
+}
+h2{
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: center;
+    color: royalblue;
+    width: 900px;
+    height: 50px;
+    font-size: 50px;
+}
+
+p{
+    display: flex;
+    align-self: auto;
+    border:  1px solid pink;
+    border: double;
+    color: black;
+    width: 900px;
+    height: 60px;
+    font-size: 20px;
+}
+
+p_1{
+    margin-top: 20px;
+    display: flex;
+    align-self: auto;
+    width: 900px;
+    height: 250px;
+    color: black;
+    font-size: 18px;
+    font-style: inherit;
+
+}
+
+
+h2 p_2 imagen1{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+@font-face {
+    font-family: desde fuentes;
+    src: url(../fuentes/ComicNeue-LightItalic.ttf)
+}
+
+h1{
+    font-family: desde fuentes; 
+}
+
+@font-face {
+    font-family: desde fuentes 2;
+    src: url(../fuentes/CURLZ___.TTF)
+}
+
+.h2{
+    font-family: desde fuentes 2; 
+}
+
+@keyframes example {
+    from {background-color: purple;}
+    to {background-color: yellow;}
+  }
+  
+  /* The element to apply the animation to */
+h2{
+    width: 500px;
+    height: 50px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 5s;
+}
+
