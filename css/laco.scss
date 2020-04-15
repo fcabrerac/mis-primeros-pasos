@@ -1,0 +1,10 @@
+$color-prueba: #642421ff;
+$altura: 600px;
+
+div{
+    height: $altura;
+}
+
+div h1 {
+    color: $color-prueba;
+}

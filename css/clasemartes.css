@@ -1,0 +1,31 @@
+div {
+  height: 300px;
+  padding: 15px; }
+  div h1 {
+    color: rgba(46, 4, 192, 0.5); }
+  div p {
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    div p span {
+      font-weight: bolder; }
+
+section p + span {
+  color: blue; }
+
+.num {
+  width: 100px;
+  height: 120px;
+  color: #7e1919;
+  font-style: Arial;
+  border: double;
+  float: none; }
+
+.mnn {
+  width: 200px;
+  height: 180px;
+  color: #774466;
+  font-style: none;
+  border: double;
+  float: right; }
+
+/*# sourceMappingURL=clasemartes.css.map */

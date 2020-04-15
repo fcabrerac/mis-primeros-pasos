@@ -1,0 +1,43 @@
+$color-prueba: rgba(46, 4, 192, 0.5);
+$altura: 300px;
+div {
+    height: $altura;
+    padding: 15px;
+    h1 {
+        color: $color-prueba;
+    }
+    p {
+        color: gray;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        span {
+            font-weight: bolder;
+        }
+    }
+}
+
+section {
+    p {
+        +span {
+            color: blue;
+        }
+    }
+}
+
+
+
+@mixin hi ($width,$height,$color,$font-style,$border, $float){
+    width: $width;
+    height: $height;
+    color: $color;
+    font-style: $font-style;
+    border: $border; 
+    float: $float;
+  }
+
+.num{
+      @include hi(100px,120px , #7e1919, Arial, double, none)
+}
+
+.mnn{
+    @include hi(200px,180px , #774466, none, double , right)
+}

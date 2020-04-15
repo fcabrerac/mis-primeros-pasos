@@ -1,0 +1,9 @@
+@mixin mls($color,$font-style,$font-size,$border,$display){
+  color: $color;
+  font-style: $font-style;
+  font-size: $font-size;
+  border: $border;
+  display: $display;  
+}
+
+
