@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            animation: 10s infinite 3s alternate slidein;
+        }
+        
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%; 
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+         
+        #pacman {
+            animation: 10s infinitive 3s  slidein;
+        }
+
+        #pacman {
+            animation-duration: 3s;
+            animation-name: pacman;
+            animation-iteration-count:initial;
+        }
+
+        @keyframes pacman {
+            from {
+                margin-left: 10%;
+                width: 30%; 
+            }
+
+            to {
+                margin-left: 0%;
+                width: 10%;
+            }
+        }
+       
+
+        #pacman {
+            width: 0px;
+            height: 0px;
+            border-right: 60px solid transparent;
+            border-top: 60px solid #d0ff00;
+            border-left: 60px solid #d0ff00;
+            border-bottom: 60px solid #d0ff00;
+            border-top-left-radius: 60px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+        }
+
+        #cuadro {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;      
+            animation: 10s infinite 3s alternate example;
+        
+         }
+       
+
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:400px; top:0px;}
+            50%  {background-color:blue; left:400px; top:400px;}
+            75%  {background-color:green; left:0px; top:400px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+
+        #facebook-icon {
+            background: blue;
+            text-indent: -999em;
+            width: 100px;
+            height: 110px;
+            box-sizing: content-box;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            border: 15px solid blue;
+            border-bottom: 0;
+         }
+        #facebook-icon:before {
+            content: "/20";
+            position: absolute;
+            background: blue;
+            width: 40px;
+            height: 90px;
+            bottom: -30px;
+            right: -37px;
+            border: 20px solid #eee;
+            border-radius: 25px;
+            box-sizing: content-box;
+        }
+        #facebook-icon:after {
+            content: "/20";
+            position: absolute;
+            width: 55px;
+            top: 50px;
+            height: 20px;
+            background: #eee;
+            right: 5px;
+            box-sizing: content-box;
+        }
+
+        #facebook-icon {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: relative;
+            animation-name: facebook;
+            animation-duration: 3s;  
+            animation-delay: 2s;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes facebook {
+            from {top: 0px; background-color: blue;}
+            to {top: 200px;}
+        }
+
+        #pointer {
+            width: 200px;
+            height: 40px;
+            position: relative;
+            background: red;
+        }
+
+         #pointer:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 20px solid white;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+
+        #pointer:before {
+            content: "";
+            position: absolute;
+            right: -20px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 20px solid red;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+
+        #pointer{
+            animation: 10s infinite 3s alternate cuadro;
+        }
+
+        @keyframes cuadro {
+            from {
+                margin-left: 25%;
+                width: 50%; 
+            }
+
+            to {
+                margin-left: 0%;
+                width: 25%;
+            }
+        }
+
+        #heart {
+            position: relative;
+            width: 100px;
+            height: 90px;
+        }
+
+        #heart:before,
+        #heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: red;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        #heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        #heart {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: example1;
+            animation: 10s infinite 3s alternate example1;
+        }
+
+        @keyframes example1 {
+            from {background-color: red;}
+            to {background-color: white;}
+        }
+
+    </style>
+    <style>
+        
+    </style>
+    
+</head>
+
+<body>
+    <p>The Caterpillar and Alice looked at each other for some time in silence:
+        at last the Caterpillar took the hookah out of its mouth, and addressed
+        her in a languid, sleepy voice.
+    </p>
+    <div id="oval"></div>
+    <div id="pacman"></div>
+    <div id="cuadro"></div>
+    <div id="facebook-icon"></div> 
+    <div id="pointer"></div>
+    <div id="heart"></div>
+    
+</body>
+</html>
