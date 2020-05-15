@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        
+        <div id = 'lista'>
+            <h2>#primer punto</h2>
+            <label for="homework">Write here</label>
+            <input type="text" id='skill'>
+        </div>
+    </form>
+
+    <button type="button" id= 'add' onclick='add()'> add </button>
+    <button type="button" id= 'remove' onclick='remove()'> remove </button>
+
+    
+    <script>
+        var list = []
+        let contenedor = document.querySelector('#lista')
+
+        function add(){
+            let input = document.querySelector('#skill').value;
+            list.push(input);
+                console.log(list)
+        }
+
+        function remove(){
+            let input = document.querySelector('#skill').value;
+            list.pop(input);
+                console.log(list)
+        }
+    </script>
+
+    <div id = 'Transaction'>
+        <h3>transacción</h3>
+        <input type="text" class="deposito" placeholder="valor a depositar">
+        <input type="button" class="Deposito" onclick="depositar()">
+
+        <input type="text" class="retiro" placeholder = "ingrese el valor a retirar">
+        <input type="button" value="retiro" onclick="retirar()">
+        <input type="text" name="verificacion" placeholder="Click en verificar">
+        <input type="button" value = "verificacion" onclick="verificar()">
+    </div>
+
+    <script>
+        function depositar() {
+            deposito = parseFloat( document.getElementsByName("deposito")[0].value);
+
+            if(isNan(deposito)) {
+                console.log("el valor no es correcto");
+                return;
+            }
+
+            saldo = saldo + deposito;
+            console.log(saldo)
+        }
+
+        function retirar () {
+            retiro = parseFloat(document.getElementsByName("retiro")[0].value);
+
+            if(isNaN(retiro)) {
+                return console.log("el valor no es valido")
+            }
+
+            if (retiro > saldo) {
+                return console.log("Su fondo disponible no es suficiente");
+            }
+            saldo = saldo - rettiro;
+            console.log(saldo)
+        }
+
+        function verificar () {
+            document.getElementsByName("verificacion")[0].value =saldo;
+            console.log(saldo)
+        }
+    </script>
+    </div>
+
+
+    <div >
+        <h2>#Tercer punto</h2>
+        <form id="theForm" method="post" onsubmit="return validate()"> 
+            <input type="email" id="mail" name="mail" required >
+            
+            <div>
+                <input type="text" name="" id="email">
+                <select name="" id="subfix">
+                    <option value="@gmail.com">@gmail.co</option>
+                    <option value="@uhotmal.com">@hotmail.com</option>
+                </select>
+            </div>
+            <div>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </div>
+
+    <div >
+        <h2>#Cuarto punto</h2>
+        <form action="" class="formulario">
+            <h1 class="formulario__titulo" >Contáctenos</h1>
+             
+             <label for="" 
+             class="formulario__label">Name</label>
+             <input type="text" class="formulario__input">
+             <label for="" 
+             class="formulario__label">e-mail</label>
+             <input type="text" class="formulario__input">
+             <label for="" 
+             class="formulario__label">dir</label>
+             <input type="text" class="formulario__input">
+             <label for="" 
+             class="formulario__label">age</label>
+             <input type="text" class="formulario__input">
+             <label for="" 
+             class="formulario__label">Ocupation</label>
+             <input type="text" class="formulario__input">
+             <input type="submit" class="formulario__submit">
+         </form>
+         <script>
+             var inputs = document.getElementsByClassName("formulario__input");
+             for (var i=0; i< inputs.length; i++){
+                 inputs[i].addEventListener('Keyup', function(){
+                     if(this.value.length>=1) {
+                         this.nextElementSibling.classlist.add('fijar');
+                     } else {
+                       this.nextElementSibling.classlist.remove('fijar');
+                     }
+                 });
+             }
+         </script>
+    </script>
+
+        
+</body>
+</html>
